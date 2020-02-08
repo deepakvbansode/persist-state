@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+html {
+  background-color: #f7d8d8;
+}
+
+h1 {
+  text-align: center;
+}
+
+.app__config label {
+  display: block;
+  width: auto;
+  height: 30px;
+  vertical-align: middle;
+  position: relative;
+}
+
+input[type="radio"] {
+  color: red;
+  border: 1px solid #6b4f4f;
+  width: 24px;
+  border-radius: 19px;
+  background-color: blue;
+}
+
+.app__description {
+  padding: 15px;
+}
+
+figure {
+  background-color: #e2e0e0;
+  overflow-x: auto;
+  height: 100px;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.counter {
+  background: #e8a7a7;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px grey;
+}
+
+.counter span {
+  display: block;
+  text-align: center;
+}
+
+button {
+  background-color: #929ee6;
+  border: 1px solid gray;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px gray;
+}
+
+li.app--green {
+  background-color: #51e657;
+}
+
+li {
+  margin: 5px;
+}
+
+li.app--red {
+  background-color: #ef6666;
+}
+
+.app__config {
+  padding: 15px;
+}
+
+.app__checkbox input[type="radio"] {
+  visibility: hidden;
+}
+
+span.check {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #796969;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+  top: 2px;
+  transition: all 0.5s linear;
+}
+
+span.check::after {
+  content: "";
+  width: 10px;
+  height: 10px; 
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  border-radius: 50%;
+  transition: all 0.5s linear;
+}
+
+input[type="radio"]:checked + .check {
+  border: 1px solid #929ee6;
+}
+
+input[type="radio"]:checked + .check:after {
+  background-color: #929ee6;
+}
+
+.app__instruction {
+  text-align: center;
+  padding: 5px;
+  color: #ef6666;
+}
